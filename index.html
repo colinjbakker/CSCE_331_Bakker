@@ -1,22 +1,40 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html lang="en">
+  <script src="functions.js"></script>
   <head>
-    <title>Colin Bakker</title>
+    <title>Landing Page</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <link id="mainStyleSheet" rel="stylesheet" href="styles1.css">
   </head>
   <body>
-    <h1>Colin Bakker</h1>
-    <ul>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="qualifications.html">Qualifications</a></li>
-      <li><a href="service.html">Service</a></li>
-      <li><a href="interests.html">Interests</a></li>
-    </ul>
-    <p>A website created by me.</p>
+    <div class="header">
+      <h1>Colin Bakker</h1>
+      <ul>
+        <li><a class="uilink" href="index.html">Landing Page</a></li>
+        <li><a class="uilink" href="portfolio.html">Portfolio</a></li>
+        <li><a class="uilink" href="qualifications.html">Qualifications</a></li>
+        <li><a class="uilink" href="service.html">Service</a></li>
+        <li><a class="uilink" href="aipage.html">AI Page</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="projectsgrid">
+        <section class="projectdesc">
+          <h2>About Me</h2>
+          <p>
+            I am a computer science student studying at Texas A&M University.
+            Last summer I interned with Textron Aviation as a data analyst intern, and I currently work as a peer teacher for the university.
+          </p>
+        </section>
+        <img src="resources/TXTIGroup-0014.jpg">
+      </div>
+    </div>
+    <footer>
+      <a class="uilink" href="https://github.com/colinjbakker" target="_blank">GitHub</a>
+      <a class="uilink" href="https://www.linkedin.com/in/colinbakker/" target="_blank">LinkedIn</a>
+      <button type="button" onclick="toggleStyleSheet()">Toggle Style Sheet</button>
+    </footer>
   </body>
-  <footer>
-    <a href="https://github.com/colinjbakker">Github</a>
-  </footer>
+  
 </html>

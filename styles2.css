@@ -1,0 +1,123 @@
+body {
+    background-color: aliceblue;
+    color:rgb(59, 122, 231);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5em;
+}
+h1{
+    margin-left: 200px;
+    width: auto;
+    text-align: center;
+}
+.content{
+    margin-left: 200px;
+    width: auto;
+    text-align: justify;
+}
+
+.content p{
+    margin-top: -25px;
+}
+
+.content img{
+    display: block;
+    margin: auto;
+}
+
+img{
+    width: 75%;
+    margin: auto;
+}
+
+
+
+ul {
+    display: grid;
+    list-style-type: none;
+    padding: 5px;
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    background-color: azure;
+    border: 3px solid rgb(59, 122, 231);
+    border-radius: 5%;
+    gap: 7px;
+}
+
+.uilink {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: 95%;
+    padding: 3px;
+    color:rgb(59, 122, 231);
+}
+
+li {
+    width: 100%;
+    margin: auto;
+}
+
+.uilink:link{
+    color:rgb(59, 122, 231);
+    background-color: rgb(183, 217, 246);
+    border-top: none;
+    border-left: none;
+    border-bottom: 4px solid rgb(49, 117, 220);
+    border-right: 2px solid rgb(59, 132, 241);
+}
+
+.uilink:hover{
+    color:rgb(59, 122, 231);
+    background-color: rgb(227, 248, 255);
+    border-top: none;
+    border-left: none;
+    border-bottom: 4px solid rgb(49, 117, 220);
+    border-right: 2px solid rgb(59, 132, 241);
+}
+
+.uilink:active{
+    color:rgb(59, 122, 231);
+    background-color: rgb(227, 248, 255);
+    border-top: 4px solid rgb(49, 117, 220);
+    border-left: 2px solid rgb(59, 132, 241);
+    border-bottom: none;
+    border-right: none;
+}
+
+button{
+    display: block;
+    width: 100%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.80em;
+    color:rgb(59, 122, 231);
+    background-color: rgb(183, 217, 246);
+    border-top: none;
+    border-left: none;
+    border-bottom: 4px solid rgb(49, 117, 220);
+    border-right: 2px solid rgb(59, 132, 241);
+}
+
+button:hover{
+    background-color: rgb(227, 248, 255);
+}
+
+button:active{
+    background-color: rgb(227, 248, 255);
+    border-top: 4px solid rgb(49, 117, 220);
+    border-left: 2px solid rgb(59, 132, 241);
+    border-bottom: none;
+    border-right: none;
+}
+
+footer{
+    display: grid;
+    position: fixed;
+    bottom: 0px;
+    left: 15px;
+    padding: 5px;
+    background-color: azure;
+    border: 3px solid rgb(59, 122, 231);
+    border-radius: 5%;
+    gap: 7px;
+}

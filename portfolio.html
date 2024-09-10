@@ -1,22 +1,96 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-    <html lang="en">
-        <head>
-            <title>Portfolio</title>
-            <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" href="styles.css">
-        </head>
-        <body>
-            <h1>Portfolio</h1>
-            <ul>
-                <li><a href="index.html">Landing Page</a></li>
-                <li><a href="qualifications.html">Qualifications</a></li>
-                <li><a href="service.html">Service</a></li>
-                <li><a href="interests.html">Interests</a></li>
-            </ul>
-            <p>A website created by me.</p>
-        </body>
-        <footer>
-            <a href="https://github.com/colinjbakker">Github</a>
-        </footer>
+<html lang="en">
+  <script src="functions.js"></script>
+  <head>
+    <title>Portfolio</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link id="mainStyleSheet" rel="stylesheet" href="styles1.css">
+  </head>
+  <body>
+    <div class="header">
+        <h1>Portfolio</h1>
+        <ul>
+            <li><a class="uilink" href="index.html">Landing Page</a></li>
+          <li><a class="uilink" href="portfolio.html">Portfolio</a></li>
+          <li><a class="uilink" href="qualifications.html">Qualifications</a></li>
+          <li><a class="uilink" href="service.html">Service</a></li>
+          <li><a class="uilink" href="aipage.html">AI Page</a></li>
+        </ul>
+      </div>
+    <div class="content">
+        <div class="projectsgrid">
+            <section class="projectdesc">
+                <h2>Bouncing Window</h2>
+                <p>
+                  <a href="https://github.com/colinjbakker/BouncingWindow">Bouncing Window</a> is a window that allows the user to throw a red square around their screen.
+					        Programmed in C++ using the <a href="https://www.wxwidgets.org/">wxWidgets</a> library.
+					        The biggest challenge was getting the window to rotate. I solved this by creating bitmaps representing different angles, which could be used to change the window's shape, and swapped between them depending on the window's angle.
+					        In the future I want to clean up the code, and possibly remake the project entirely.
+					        I also want to improve the rotational physics.
+                </p>
+                
+            </section>
+            <img src="resources/bw.gif" width="400">
+            <section class="projectdesc">
+                <h2>FPS</h2>
+                <p>
+                  <a href="https://github.com/colinjbakker/FPSGame2">FPS Game</a> is my entry into 3D graphics.
+					        Programmed in C++ with the help of <a href="https://www.raylib.com/">raylib</a>.
+					        Biggest challenge was refreshing my linear algebra knowledge for working in 3D, especially with the camera.
+					        Want to add mode game-like features like upgrades and weapons if there is a lull in my schoolwork or over the winter.
+					        Also want to make the graphics look better, currently enrolled in computer graphics, so hopefully I learn helpful information for this project.
+                </p>
+            </section>
+            <img src="resources/fps.gif" width="400">
+            <section class="projectdesc">
+                <h2>Wordle</h2>
+                <p>
+                  Wordle Clone is a clone of the game Wordle created using JavaFx for a school project.
+                  Although the professor asked us to create it using <a href="https://gluonhq.com/products/scene-builder/">SceneBuilder</a>, I decided to program all of 
+                  the GUI elements manually at the advice of <a href="https://www.pragmaticcoding.ca/beginners/intro">this article</a> by Dave Barrett.
+                  This was difficult, but it gave me a far greater understanding of how GUI elements are created and interact, and sparked my interest in creating more graphical applications.
+                </p>
+            </section>
+            <img src="resources/wordle.gif" width="400">
+            <section class="projectdesc">
+                <h2>Pong</h2>
+                <p>
+                  <a href="https://github.com/colinjbakker/Pong">Pong</a> was my first introduction to OpenGL.
+					        I made this after learning OpenGl on <a href="https://learnopengl.com/">learnopengl.com</a> written by <a href="https://joeydevries.com/#home">Joey de Vries</a>.
+					        The biggest challenge was getting OpenGL, GLFW, and GLAD running and linked to my project.
+					        Ultimately, this project was more about getting more comfortable working with libraries in C++ than the actual game itself.
+					        I am still proud of my AI enemy paddle who predicts the movement of the ball and positions itself to create an extremely difficult return. 
+					        I haven't been able to score even a single point against it.
+                </p>
+            </section>
+            <img src="resources/pong.gif" width="400">
+            <section class="projectdesc">
+                <h2>Mouse Distance Tracker</h2>
+                <p>
+                  <a href="https://github.com/colinjbakker/mouse-distance-tracker">Mouse Distance Tracker</a> was a fun,
+                  quick project I created to track how far, in meters, my mouse moves on my screen.
+                  Created using Python and the <a href="https://docs.python.org/3/library/tkinter.html">tkinter</a>,
+                  <a href="https://pypi.org/project/PyAutoGUI/">pyautogui</a> and <a href="https://pypi.org/project/screeninfo/">screeninfo</a> packages.
+                </p>
+            </section>
+            <img src="resources/mdt.gif" width="400">
+            <section class="projectdesc">
+                <h2>Paint</h2>
+                <p>
+                  Paint was a school project for computer graphics where we utilized OpenGL to create a drawing application.
+                  The point of the project was to gain an understanding of how the frame buffers of OpenGL work, and how user input is handled.
+                  Includes a way to change the color of the brush, background, as well as different brush shapes and types.
+                </p>
+            </section>
+            <img src="resources/paint.gif" width="400">
+      </div>
+    </div>
+    <footer>
+      <a class="uilink" href="https://github.com/colinjbakker" target="_blank">GitHub</a>
+      <a class="uilink" href="https://www.linkedin.com/in/colinbakker/" target="_blank">LinkedIn</a>
+      <button type="button" onclick="toggleStyleSheet()" >Toggle Style Sheet</button>
+    </footer>
+  </body>
+  
 </html>
